@@ -34,12 +34,9 @@ class _HomePageState  extends State<HomePage> {
   }
 Future _openDetails3()async{
     String userId ="3003";
-    Navigator.of(context).pushNamed(SettingsPage.id,arguments:userId);
+    Navigator.of(context).pushReplacementNamed(SettingsPage.id,arguments:userId);
 }
-  Future _openDetails4()async {
-    String userId="3003";
-    Navigator.pushReplacementNamed(context,DetailsPage.id);
-  }
+
     @override
     Widget build(BuildContext context) {
       return Scaffold(
